@@ -45,6 +45,17 @@ def saver(result):
     db.commit()
     db.close()
 
+
+def saveToMysqlMethod2():
+    connect = pymysql.connect(user='root', password='root', host='localhost', port=3306, db='python', charset='utf8')
+    conn = connect.cursor()
+    conn.execute("create database if not exists Ganjizufang character set utf8;")
+    conn.execute("use Ganjizufang;")
+    sql = """create table if not exists roominfo (id INT PRIMARY KEY AUTO_INCREMENT,title VARCHAR(200),price VARCHAR(200),room_type VARCHAR(200),room_size VARCHAR(200),room_direction VARCHAR(200),
+            room_total_floor VARCHAR(200),elecator VARCHAR(200),room_fixtures VARCHAR(200),viliage_name VARCHAR(200),raiway_distance VARCHAR(300),url VARCHAR(200))"""
+    conn.execute('drop table if exists roominfo;')
+    conn.execute(sql)
+
 if __name__ == '__main__':
     result = {'item_id': '5097736', 'item_fullName': '三只松鼠手撕面包饼干蛋糕零食大礼包酵母面包早餐口袋软面包礼盒1000g/盒', 'item_name': '三只松鼠面包', 'item_price': '29.80', 'item_brand': 'npl', 'gross_weight': '1.42kg', 'item_origin': '安徽省合肥市', 'item_certification': '其它', 'processing_technology': '其它', 'packing_unit': '箱装', 'is_suger': '含糖', 'item_taste': '原味', 'storage_condition': '常温', 'item_classification': '面包', 'cookie_classification': '其它', 'item_package': '礼盒装', 'applicable_people': '休闲娱乐', 'cake_classification': '西式糕点', 'item_QGP': '180天'}
     saver(result)
