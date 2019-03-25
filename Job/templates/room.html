@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }} <!--This is adding something called CSRF token cross-site request forgery token-->
+            <fieldset class="form-group">
+                <!--<legend class="border-bottom mb-4">Join Today</legend>-->
+                <div class="form-group">
+                    {{ form.roomid.label(class="form-control-label") }}
+
+                    {% if form.roomid.errors %}
+                        {{ form.roomid(class="form-control form-control-lg is-invalid")}}
+                        <div class="invalid-feedback">
+                            {% for error in form.roomid.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.roomid(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.roomname.label(class="form-control-label") }}
+
+                    {% if form.roomname.errors %}
+                        {{ form.roomname(class="form-control form-control-lg is-invalid")}}
+                        <div class="invalid-feedback">
+                            {% for error in form.roomname.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.roomname(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.bedtype.label(class="form-control-label") }}
+
+                    {% if form.bedtype.errors %}
+                        {{ form.bedtype(class="form-control form-control-lg is-invalid")}}
+                        <div class="invalid-feedback">
+                            {% for error in form.bedtype.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.bedtype(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.roomclass.label(class="form-control-label") }}
+
+                    {% if form.roomclass.errors %}
+                        {{ form.roomclass(class="form-control form-control-lg is-invalid")}}
+                        <div class="invalid-feedback">
+                            {% for error in form.roomclass.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.roomclass(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.roomsize.label(class="form-control-label") }}
+
+                    {% if form.roomsize.errors %}
+                        {{ form.roomsize(class="form-control form-control-lg is-invalid")}}
+                        <div class="invalid-feedback">
+                            {% for error in form.roomsize.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.roomsize(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}
