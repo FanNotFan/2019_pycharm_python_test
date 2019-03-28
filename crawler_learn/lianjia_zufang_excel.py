@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import xlwings as xw
 import time
+import re
 
 # 创建Excel文件，并命名标题行
 wb = xw.Book()
@@ -64,6 +65,8 @@ def get_info(url, location, page=0):
     price = ''
     for child in bsobj.find('p', {'class': 'content__aside--title'}).children:
         price += child.string
+    price = re.findall("\d+", price)
+
     # 租赁方式
     rentalMethod = bsobj.find('p', {'class': 'content__article__table'}).find_all('span')[0].get_text() if bsobj.find(
         'p', {'class': 'content__article__table'}) is not None else 0
@@ -71,6 +74,7 @@ def get_info(url, location, page=0):
     house_type = bsobj.find('p', {'class': 'content__article__table'}).find_all('span')[1].get_text()
     # 房屋面积
     area = bsobj.find('p', {'class': 'content__article__table'}).find_all('span')[2].get_text()
+    area = re.findall("\d+", area)
     # 房屋朝向
     houseOrientation = bsobj.find('p', {'class': 'content__article__table'}).find_all('span')[3].get_text()
     # 发布时间

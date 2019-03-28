@@ -1,8 +1,8 @@
-from flask import Flask, render_template, url_for, flash, redirect, request
-
 from Job.forms import RoomForm
+from jinja2 import TemplateNotFound
+from Job.exception.custom_exception import NoneParameterException
 from Job.flask_crawler import get_crawler_result
-from flask import jsonify
+from flask import Flask, render_template, url_for, flash, redirect, request, jsonify, abort
 
 app = Flask(__name__)
 
@@ -44,10 +44,11 @@ def room():
     form = RoomForm()
 
     url = request.args.get('url')
-    print(url)
+    if url == None:
+        raise NoneParameterException("空参数异常", "fail")
+
     form.roomid.data = url
     dict_result = get_crawler_result(url)
-    print('jsonify(dict_result) == ', jsonify(dict_result))
     form.roomname.data = dict_result['roomType']
     form.bedtype.data = dict_result['bedType']
     form.roomclass.data = dict_result['roomClass']
@@ -56,7 +57,11 @@ def room():
     if form.validate_on_submit():
         flash(f'Account created for {form.roomid.data}!', 'success')
         return redirect(url_for("room"))
-    return render_template('room.html', title='Room', form=form)
+
+    try:
+        return render_template('room.html', title='Room', form=form)
+    except TemplateNotFound:
+        abort(404)
 
 
 @app.errorhandler(404)
@@ -65,4 +70,8 @@ def page_not_found(error):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(
+        host="127.0.0.1",
+        port=5000,
+        debug=True
+    )
