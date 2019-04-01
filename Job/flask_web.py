@@ -49,7 +49,7 @@ def room():
 
     form.roomid.data = url
     dict_result = get_crawler_result(url)
-    form.roomname.data = dict_result['roomType']
+    form.roomname.data = dict_result['roomClass'] + '-' + dict_result['roomType']
     form.bedtype.data = dict_result['bedType']
     form.roomclass.data = dict_result['roomClass']
     form.roomsize.data = dict_result['roomSize']

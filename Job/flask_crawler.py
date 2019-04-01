@@ -151,8 +151,8 @@ ROOMEXTRAS = ['Non-smoking', 'Smoking', 'Accessible', 'Lanai', 'Balcony', 'Priva
               'Fireplace', 'Patio', 'Parking', 'Connecting Rooms', 'Garden', 'Female', 'Male', 'Mixed']
 
 SIZETYPES_JOIN = '|'.join(SIZETYPES).lower()
-# REGEX_SIZETYPES = re.compile(r'(^\d+\s?(?:())')
-REGEX_SIZETYPES = re.compile(r'(^\d+\s?(?:km|ha|acre|mile|m|ft|in|cm|yd|mile|sq))')
+# REGEX_SIZETYPES = re.compile(r'(\d+?(-)?\d+\s?(?:km|ha|acre|mile|m|ft|in|cm|yd|sq|KM|HA|ACRE|MILE|M|FT|IN|CM|YD|SQ))')
+REGEX_SIZETYPES = re.compile(r'(\d+?\s?(-|to)?\s?\d+\s?(square|sq\.|sq|SQ|ft²|m²)+\s?(?:mt|km|ha|acre|mile|m|feet|foot|ft|in|cm|yd|KM|HA|ACRE|MILE|M|FT|IN|CM|YD)?)')
 REGEX_BEDTYPES = re.compile('(' + '|'.join(BEDTYPES).lower() + ')')
 REGEX_ROOMTYPE = re.compile('\\b(' + '|'.join(ROOMTYPES).lower() + ')')
 REGEX_BOOKING_ROOMTYPES = re.compile('\\b(' + '|'.join(BOOKING_ROOMTYPES).lower() + ')')
@@ -216,7 +216,8 @@ def get_crawler_result(crawler_url):
     dict_response.setdefault("roomClass", getRoomClass(process_data))
     dict_response.setdefault("pureRoomBedding", getPureRoomBedding(process_data))
     dict_response.setdefault("package", getPackage(process_data))
-    dict_response.setdefault("roomSize", get_room_size(process_data))
+    # print('content_without_space==', content_without_space)
+    dict_response.setdefault("roomSize", get_room_size(str(content_without_space))[0] if get_room_size(str(content_without_space)) != 'unknown' else 'unknown')
     response = make_response(jsonify(dict_response))
     response.status = "200"
     response.headers["author"] = "Lennon"
@@ -244,7 +245,8 @@ def remove_space(content):
     # 去空格
     for i in range(len(lines)):
         lines[i] = lines[i].strip()
-        if lines[i] == '' or lines[i] == 'n' or i == 0 or i == len(lines) - 1:
+        # if lines[i] == '' or lines[i] == 'n' or i == 0 or i == len(lines) - 1:
+        if lines[i] == '' or lines[i] == 'n':
             continue
         else:
             lines[i] = lines[i].replace("\t", "")
@@ -371,9 +373,6 @@ def getPackage(mystr, returnPackage=True):
 
 
 if __name__ == '__main__':
-    # app = Flask(__name__)
-    # 打开调试模式：启用了调试支持，服务器会在代码修改后自动重新载入，并在发生错误时提供一个相当有用的调试器
-    app.run(debug=True)
-    # str = "16akm2"
-    # result = get_room_size(str)
-    # print(result)
+    str = "BreakfastBook our breakfast inclusive rates and enjoy Grand Kitchen’s sumptuous buffet daily…Special OffersRoom DetailsSize45 m² / 485 ft²Beds1 kingRatesFrom JPY 55,000Floors8-18ViewImperial Palace and Otemon GateCapacity2 personsOther"
+    result = get_room_size(str)
+    print(result[0])
