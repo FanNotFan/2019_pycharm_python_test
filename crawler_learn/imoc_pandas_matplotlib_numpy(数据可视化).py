@@ -13,7 +13,7 @@ from matplotlib.font_manager import _rebuild
 _rebuild()
 
 data = pd.read_csv(
-    "/Users/fan/Develop/Own_Workspace/Workspace_Python/PycharmProjects/2019_pycharm_python_test/crawler_learn/imoocc.csv")
+    "/Users/hiCore/Develop/Workspace_Own/Workspace_Pycharm/2019_pycharm_python_test/crawler_learn/imoocc.csv")
 data_num = data.sort_values(by='学习人数', ascending=False)
 
 data_name = data_num['课程名称']

@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `jd_bread`(
 import pymysql
 
 def saver(result):
-    db = pymysql.connect("localhost", "root", "root", "jd", charset="utf8")
+    db = pymysql.connect("127.0.0.1", "root", "root", "jd", charset="utf8")
     cursor = db.cursor()
     print('准备插入...')
     sql = "INSERT INTO jd.jd_bread (item_id,item_fullName,item_name,item_price,item_brand,gross_weight,item_origin,\

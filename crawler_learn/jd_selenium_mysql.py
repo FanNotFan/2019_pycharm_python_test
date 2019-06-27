@@ -104,7 +104,7 @@ def getReady(category, pageQueue, braker):
 
     # 进入index页面
     js1 = "document.documentElement.scrollTop=10000"
-    driver = webdriver.Chrome("/Users/fan/Develop/Library/Plugins/Chrom_Plugin/chromedriver", options=options)
+    driver = webdriver.Chrome("/Common/Plugins/Chrome_Plugin/WebDrivers/chromedriver", options=options)
     driver.get(JDIndex)
     inputhTag = driver.find_element_by_id('key')
     buttonTag = driver.find_element_by_xpath('//*[@id="search"]/div/div[2]/button')
