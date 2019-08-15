@@ -1,0 +1,95 @@
+URL,RoomName,RoomType,RoomClass,RoomSize,BedType,wheelchair,smoking,view
+https://www.lesaintsulpice.com/en/our-suites/superior-suite,SUPERIOR SUITE,Suite,SUPERIOR,400 to 550 sq. ft,Queen Bed or King Bed,FALSE,unknown,unknown
+https://www.lesaintsulpice.com/en/our-suites/deluxe-suite,Deluxe-Suite,Suite,Deluxe,600 to 800 sq. ft,Queen Bed or King Bed,FALSE,unknown,unknown
+https://www.lesaintsulpice.com/en/our-suites/executive-suite,Executive-Suite,Suite,Executive,700 sq. ft,Queen Bed or King Bed,FALSE,unknown,unknown
+https://www.lesaintsulpice.com/en/our-suites/signature-suite,Signature-Suite,Suite,Signature,1000sq. Ft,Queen Bed or King Bed,FALSE,unknown,unknown
+http://hotelplacedarmes.com/en/classic-queen-room-2/,Standard-Room,Room,Standard,202-237 SQ FT ,Queen,FALSE,unknown,unknown
+http://hotelplacedarmes.com/en/deluxe-queen-room/,DELUXE QUEEN ROOM,Room,Deluxe,247 sq feet,Queen,FALSE,unknown,unknown
+http://hotelplacedarmes.com/en/classic-king-room-2/,CLASSIC KING ROOM,Room,Classic,261-276 SQ FT/ 24-26 SQ M,Double,FALSE,unknown,unknown
+http://hotelplacedarmes.com/en/classic-double-room/,CLASSIC ROOM,Room,Classic,261-276 SQ FT/ 24-26 SQ M,Double,FALSE,unknown,unknown
+http://hotelplacedarmes.com/en/superior-king-room/,Superior-room,Room,Superior,290-308 SQ FT,King,FALSE,unknown,unknown
+http://hotelplacedarmes.com/en/deluxe-king-room/,DELUXE KING ROOM,Room,Deluxe,232 ¨C 365 sq feet,King,FALSE,unknown,unknown
+http://hotelplacedarmes.com/en/deluxe-king-plus-room/,DELUXE KING PLUS ROOM,Room,deluxe,344 ¨C 492 sq feet,King,FALSE,unknown,unknown
+http://hotelplacedarmes.com/en/junior-suite/,JUNIOR SUITE,,,,,FALSE,,
+http://hotelplacedarmes.com/en/junior-suite-balcony/,JUNIOR-SUITE,Suite,Junior,500-675 SQ FT,King,FALSE,,
+http://hotelplacedarmes.com/en/executive-suite/,EXECUTIVE SUITE,Room,executive,800 SQ FT,King,FALSE,,
+http://hotelplacedarmes.com/en/penthouse-suite/,Luxury?SUITE,Suite,Luxury?,800-1000 SQ FT,King,FALSE,,
+https://en.palacehoteltokyo.com/room/deluxe-room/,Deluxe-Room,Room,Deluxe,45 m? / 485 ft??,King,FALSE,Smoking and non-smoking available,Imperial Palace and Otemon Gate
+https://www.thegoring.com/our-rooms/superior-rooms/,SUPERIOR ROOMS,Room,Superior,25m? / 270? ft,super comfortable bed,FALSE,unkonw,unkonwn
+https://wequassett.com/room/signature-collection-water-side/,Signature-Room,room,signature,562 SQ FT,Queen,FALSE,unkonw,unkonwn
+https://www.hotelhasslerroma.com/en/accommodation/executive-suite/53-16/,EXECUTIVE SUITE,Suite,Executive?,60?sq.mt./645 sq.ft.,Unknown,FALSE,Non-smoking,City View
+http://www.jkroma.com/en/superior-room.php,superior-room,Room,superior,26sqm/280sqf,Double,FALSE,unkonw,unkonw
+https://www.lareserve-paris.com/en/luxury-hotel/presentation/luxury-accommodations/presidentiel-suite/,PRESIDENTIAL SUITE,Suite,presidential,120 or 140 sq.m,king,FALSE,unkonw,unkonw
+https://www.coasthotels.com/hotels/washington/hotel-116-a-coast-hotel-bellevue/rooms/type/standard-room-doubledouble/,standard-room-doubledouble,Room,Standard,324 Sq. Ft.,Two double,FALSE,Non Smoking,unkonw
+https://www.coasthotels.com/hotels/washington/hotel-116-a-coast-hotel-bellevue/rooms/type/standard-room-king/,standard room king,Room,Standard,324 Sq. Ft.,King,FALSE,Non Smoking,unkonw
+https://www.coasthotels.com/hotels/washington/hotel-116-a-coast-hotel-bellevue/rooms/type/townhouse-loft-suite-king-non-smoking/,Townhouse Loft Suite King ,Suite,Suite,500 Sq. Ft.,King,FALSE,Non Smoking,unkonw
+https://www.bellevueclubhotel.com/bellevue-hotel-rooms/club-double/,Club Double,Double,Club,540 SF,two queen,FALSE,unknown,unknown
+https://www.bellevueclubhotel.com/bellevue-hotel-rooms/premier-single/,premier single,Single,premier,540 SF,Single King,FALSE,unknown,unknown
+https://www.bellevueclubhotel.com/bellevue-hotel-rooms/premier-double/,premier double,Double,premier,540 SF,Double King,FALSE,unknown,unknown
+https://www.bellevueclubhotel.com/bellevue-hotel-rooms/deluxe-single/,deluxe single,Single,Deluxe,520 SF,Single King,FALSE,unknown,unknown
+https://www.bellevueclubhotel.com/bellevue-hotel-rooms/deluxe-double/,deluxe double,Double,Deluxe,520 SF,Double Queen,FALSE,unknown,unknown
+https://www.bellevueclubhotel.com/bellevue-hotel-rooms/club-double/,Club Double,Double,Club,540 SF,Double Queen,FALSE,unknown,unknown
+https://www.bellevueclubhotel.com/bellevue-hotel-rooms/rainier/,Rainier Suite,Suite,,1900 SF,,FALSE,unknown,unknown
+https://www.accorhotels.com/gb/hotel-A580-fairmont-olympic-hotel-seattle/index.shtml#section-rooms,,,,,,,,
+https://www.chc.gr/our-hotels-greece/heraklion/athina-palace/accommodation/promo-double-rooms.aspx,Promo Double,Double,,25-35 m2,Twin,FALSE,unknown,Land
+https://www.chc.gr/our-hotels-greece/heraklion/athina-palace/accommodation/standard-double-rooms-25-30.aspx,Standard Double Rooms with land view,Double,Standard,25-30 m2,double or 2 twin beds,FALSE,unknown,Land
+https://www.chc.gr/our-hotels-greece/heraklion/athina-palace/accommodation/standard-double-rooms-28-35.aspx,Standard Double Rooms with sea view,Double,Standard,28-35 m2,double or 2 twin beds,FALSE,unknown,Sea
+https://www.chc.gr/our-hotels-greece/heraklion/athina-palace/accommodation/family-rooms-with-2-bedrooms.aspx,Family Rooms with 2 bedrooms,Family,Room,30-40 m2,two twin beds and one folding bed,FALSE,unknown,Sea
+https://www.chc.gr/our-hotels-greece/heraklion/athina-palace/accommodation/family-rooms-with-2-bedrooms-maisonette-style.aspx,Family Rooms with 2 bedrooms Maisonnette style,Family,Room,30-40 m2,a twin bed and at the upper floor 1 couch and 1 folding bed ,FALSE,unknown,Sea
+https://www.chc.gr/our-hotels-greece/heraklion/athina-palace/accommodation/junior-suites.aspx,Junior Suite,Suite,Junior,25-30 m2,double,FALSE,unknown,unknown
+https://www.chc.gr/our-hotels-greece/heraklion/athina-palace/accommodation/vip-suites.aspx,VIP Suite,Suite,vip,35-40 m2,double,FALSE,unknown,Sea or Land
+https://www.chc.gr/our-hotels-greece/heraklion/athina-palace/accommodation/vip-master-suites.aspx,VIP Master Suite,Suite,VIP Master,70-90m2,2 double,FALSE,unknown,Sea or Land
+https://www.lacasaramirez.com/rooms-rates/rooms/4fff690e-39e5-4803-9c2b-74365f68aac9,Standard Room,Room,Standard,unknown,"2 Single(s), 1 Queen(s)",FALSE,unknown,unknown
+https://www.lacasaramirez.com/rooms-rates/rooms/adaedb6f-9983-46ec-9a88-0fefb7bc6369,Dorm (Rose Quartz),Dormitory,unknown,49 sq m,14 Single(s),FALSE,unknown,unknown
+https://www.lacasaramirez.com/rooms-rates/rooms/927c1d6b-c298-4507-8794-d7754d214d8c,Dorm (Citrine),Dormitory,unknown,22 sq m,11 Single(s),FALSE,unknown,unknown
+https://www.lacasaramirez.com/rooms-rates/rooms/d99712c9-5083-4416-be51-5525d0d44a62,Couple Room,Room,unknown,unknown,1 Queen,FALSE,unknown,unknown
+https://www.lacasaramirez.com/rooms-rates/rooms/cce1080d-7f5f-4c6c-813f-e849f25fba46.,Couple Room (Garnet and Onyx),Room,unknown,unknown,2 Single(s),FALSE,unknown,unknown
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/double-rooms-with-garden-view.aspx,Double Rooms with Garden View,Room,unknown,20-23 m2," a double or 
+2 Hollywood twin",FALSE,unknown,Garden View
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/superior-double-rooms-with-garden-view.aspx,Superior Double Rooms with Garden View,Double Room,Superior ,27-28 m2,2 Hollywood twin beds or a Double bed plus extra bed,FALSE,unknown,Garden View
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/vip-double-rooms-with-side-sea-view.aspx,VIP Double Rooms with Side Sea View,Double Room,unknown,19-21 m2?, 2 Hollywood twin beds or a double bed,FALSE,unknown,Side Sea View
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/vip-suite-with-garden-view.aspx,VIP Suite with Garden View,Suite,unknown,35 m2 ,1 double bed,FALSE,unknown,Garden View
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/vip-suite-with-sea-view.aspx,VIP Suite with Sea View,Suite,unknown,27 m2,1 double bed,FALSE,unknown,Sea View
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/junior-suite-maisonette-style.aspx,Junior Suite Maisonette Style,Suite,Junior,34 m2,a double bed or two Hollywood twin,FALSE,unknown,Garden View
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/junior-suite-maisonette-style-with-outdoor-jacuzzi.aspx,Junior Suite Maisonette Style with outdoor jacuzzi,Suite,Junior,34 m2,a double bed or two Hollywood twins,FALSE,unknown,Garden View 
+"https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/double-rooms-with-garden-view,-sharing-pool.aspx","Double Rooms with Garden View, sharing pool",Double Room,unknown,20-23 m2,a double bed or 2 Hollywood twin beds ,FALSE,unknown,Garden View
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/double-bungalows-with-independent-pool.aspx,Double bungalows with independent pool,Bungalow,unknown,20-23 m2,a double bed or 2 Hollywood twin beds,FALSE,unknown,Garden View
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/double-rooms-with-private-pool.aspx,Double rooms with private pool,Double Room,unknown,32 m2, a double bed or 2 Hollywood twin beds,FALSE,unknown,Garden View
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/junior-suite-maisonette-style-with-private-pool.aspx, Junior Suite Maisonette Style with private pool,Suite,Junior,36 m2, a double bed or two Hollywood twins,FALSE,unknown,Garden View
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/vip-suite-with-private-pool.aspx,VIP Suite with private pool,Suite,unknown,32 m2,a double bed or 2 Hollywood twin beds,FALSE,unknown,Garden View
+https://www.chc.gr/our-hotels-greece/heraklion/elysium/accommodation/presidential-suite-with-private-pools.aspx,Presidential Suite with private pools,Suite,Presidential,32 m2, a double bed or 2 Hollywood twin beds,FALSE,unknown,Garden View
+https://www.chc.gr/our-hotels-greece/chania/chc-galini-palace/accommodation/standard-double-rooms.aspx,Standard Double Room,Double Room,Standard,26 sq.m,double bed (king size) or 2 twin beds plus sofa bed,FALSE,unknown,Side Sea View
+https://www.chc.gr/our-hotels-greece/chania/chc-galini-palace/accommodation/superior-double-rooms-with-sharing-pool.aspx,Superior Double Rooms with sharing pool,Double Room,Superior?,26 sq.m,double bed (king size) or 2 twin beds plus sofa bed,FALSE,unknown,Side Sea View
+https://www.chc.gr/our-hotels-greece/chania/chc-galini-palace/accommodation/vip-rooms-with-private-pool.aspx, VIP Rooms with Private pool ,Room,unknown,30 sq.m,double bed (king size) or 2 twin beds plus sofa bed,FALSE,unknown,Side Sea View
+https://www.chc.gr/our-hotels-greece/lassithi/coriva-beach/accommodation/deluxe-double-rooms.aspx,Deluxe Double Room,Double Room,unknown,18-24 m2,double bed,FALSE,unknown,Garden view
+https://www.chc.gr/our-hotels-greece/lassithi/coriva-beach/accommodation/junior-suites.aspx,Junior Suite,Suite,Junior,28-32 m2,double bed,FALSE,unknown,Sea view 
+https://www.chc.gr/our-hotels-greece/lassithi/coriva-beach/accommodation/suites-with-2-bedrooms.aspx,Suites with 2 bedroom,Suite,unknown,28-35 m2,double bed,FALSE,unknown,Land view
+https://www.chc.gr/our-hotels-greece/heraklion/kaissa-beach/accommodation/promo-ii.aspx,Double Room Land View,Double Room,unknown,unknown,unknown,unknown,unknown,Land View
+https://www.chc.gr/our-hotels-greece/heraklion/lavris-hotels-spa/accommodation/standard-double.aspx,Standard Double Room,Double Room,Standard,20 m2,double bed,unknown,"Non-smoking
+(Smoke detectors)",Garden view
+https://www.chc.gr/our-hotels-greece/heraklion/lavris-hotels-spa/accommodation/disable-friendly-double-rooms.aspx,Disable Friendly Double Rooms ,Double Room,unknown,24 m2,double bed,unknown,"Non-smoking
+(Smoke detectors)",Garden view
+https://www.chc.gr/our-hotels-greece/heraklion/lavris-hotels-spa/accommodation/family-rooms.aspx,Family Rooms ,Room,Family,35 m2,double bed,unknown,"Non-smoking
+(Smoke detectors)",Garden view
+https://www.chc.gr/our-hotels-greece/heraklion/lavris-hotels-spa/accommodation/superior-double.aspx,Superior Double Rooms,Double Room,Superior,25 m2,double bed,unknown,"Non-smoking
+(Smoke detectors)",Garden view
+https://www.chc.gr/our-hotels-greece/heraklion/lavris-hotels-spa/accommodation/deluxe-double-rooms.aspx,Deluxe Double Room,Double Room,Deluxe,25 m2 ,double bed,unknown,"Non-smoking
+(Smoke detectors)",Garden view
+https://www.chc.gr/our-hotels-greece/heraklion/lavris-hotels-spa/accommodation/junior-suites.aspx,Junior Suites ,Suite,Junior,35 m2,unknown,unknown,"Non-smoking
+(Smoke detectors)",Garden view
+https://www.chc.gr/our-hotels-greece/heraklion/lavris-hotels-spa/accommodation/standard-double-room-private-pool.aspx,Standard Double Room Private Pool ,Double Room,Standard,25 m2,unknown,unknown,"Non-smoking
+(Smoke detectors)",Garden view
+https://www.chc.gr/our-hotels-greece/heraklion/lavris-hotels-spa/accommodation/superior-double-rooms-private-pool.aspx,Superior Double Rooms Private Pool ,Double Room,Superior,25 m2 ,unknown,unknown,"Non-smoking
+(Smoke detectors)",Garden view
+https://www.chc.gr/our-hotels-greece/heraklion/lavris-hotels-spa/accommodation/junior-suites-with-private-pool.aspx,Junior Suites with Private Pool ,Suite,Junior,27 m2,unknown,unknown,"Non-smoking
+(Smoke detectors)",Garden view
+https://www.trip.com/hotels/los-angeles-hotel-detail-2024722/hotel-figueroa-downtown-los-angeles/,Signature Queen Room,Room,Signature,17 m?,Queen,unknown,Non-smoking,null
+,Classic Queen Room,Room,Classic,20 m?,Queen,unknown,Non-smoking,null
+,Classic Queen ADA Room,Room,Classic,24 m?,Queen,unknown,Non-smoking,null
+,Classic Two Double Room,Room,Classic,26 m?,2 double beds,unknown,Non-smoking,null
+,Classic King Room,Room,Classic,25 m?,King,unknown,Non-smoking,null
+,Deluxe King Room,Room,Deluxe,32 m?,King,unknown,Non-smoking,null
+,Deluxe Two Queen Room,Room,Deluxe,29 m?,2 queen beds,unknown,Non-smoking,null
+,Classic Suite,Suite,Classic,32 m?,King,unknown,Non-smoking,null
+,Deluxe Suite,Suite,Deluxe,41 m?,King,unknown,Non-smoking,null
+,Figueroa Suite,Suite,unknown,33-48 m?,King,unknown,Non-smoking,null
