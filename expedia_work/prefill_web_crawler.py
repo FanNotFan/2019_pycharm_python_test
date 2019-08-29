@@ -18,7 +18,8 @@ from bs4 import BeautifulSoup
 from ast import literal_eval
 
 ROWNUMBERGOBAL = 1
-
+app = xw.App()
+SHEET_NAME = 'Source'
 # API_URL = 'http://127.0.0.1:5000/'
 API_URL = 'http://10.184.144.12:48080/'
 
@@ -87,7 +88,7 @@ def content_parse(bsobj, target_url, rowNumber):
         ROWNUMBERGOBAL = rowNumber
 
 
-def read_csv(file_path: str):
+def read_csv(file_path: str, num_of_col: int):
     # 读取csv至字典
     wb = create_excel()
     csvFile = open(file_path, "r", encoding='gb18030')
@@ -96,13 +97,16 @@ def read_csv(file_path: str):
     for item in reader:
         if reader.line_num == 1:  # 忽略第一行
             continue
-        print("URL = {}".format(item[0]))
-        bsobj = access_api(item[0])
-        content_parse(bsobj, item[0], ROWNUMBERGOBAL)
+        target_url = item[num_of_col]
+        if target_url == '' or target_url.strip() == '':
+            continue
+        print("URL = {}".format(target_url))
+        bsobj = access_api(target_url)
+        content_parse(bsobj, target_url, ROWNUMBERGOBAL)
         time.sleep(5)
     csvFile.close()
-    wb.save('result.xlsx')
-    wb.close()
+    wb.save('../source/csv_result_'+time.strftime('%Y%m%d', time.localtime(time.time()))+'.xlsx')
+    app.quit()
 
 
 def read_excel(excel_file_path: str):
@@ -110,7 +114,7 @@ def read_excel(excel_file_path: str):
     # 打开文件
     excel = xlrd.open_workbook(excel_file_path)
     # 获取sheet：
-    table = excel.sheet_by_name('Rooms')  # 通过表名获取
+    table = excel.sheet_by_name(SHEET_NAME)  # 通过表名获取
 
     # 获取行数和列数：
     rows = table.nrows  # 获取行数
@@ -122,15 +126,18 @@ def read_excel(excel_file_path: str):
     first_col_values = table.col_values(0)  # 获取整列内容
     del(first_col_values[0])
     for item in first_col_values:
+        if item == '' or item.strip() == '':
+            continue
         print("URL = {}".format(item))
         bsobj = access_api(item)
         content_parse(bsobj, item, ROWNUMBERGOBAL)
         time.sleep(5)
-    excel.close()
-    wb.save('result.xlsx')
-    wb.close()
+    wb.save('../source/result_'+time.strftime('%Y%m%d', time.localtime(time.time()))+'.xlsx')
+    # wb.close()
+    app.quit()
 
 
 if __name__ == '__main__':
-    # read_csv("../source/firstRooms.csv")
-    read_excel("../source/Rooms_190809.xlsx")
+    # read_csv("../source/firstRooms.csv", 0)
+    read_excel("../source/RoomSource0826.xlsx")
+    # read_csv("../source/full_result_300357318.csv", 2)
