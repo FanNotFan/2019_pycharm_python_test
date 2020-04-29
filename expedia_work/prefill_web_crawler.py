@@ -54,6 +54,7 @@ def content_parse(bsobj, target_url, rowNumber):
     global ROWNUMBERGOBAL
     if match_content_value != '' and input_numberofroomtype_value != '0':
         mlist = literal_eval(match_content_value)
+        print(mlist)
         len_mlist = len(mlist)
         for item in mlist:
             print("rowNumber:{}".format(rowNumber))
@@ -139,5 +140,5 @@ def read_excel(excel_file_path: str):
 
 if __name__ == '__main__':
     # read_csv("../source/firstRooms.csv", 0)
-    read_excel("../source/RoomSource0826.xlsx")
+    read_excel("../source/all_20190905.xlsx")
     # read_csv("../source/full_result_300357318.csv", 2)

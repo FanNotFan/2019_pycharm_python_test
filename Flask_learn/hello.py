@@ -10,10 +10,15 @@ app = Flask(__name__)
 # 打开调试模式：启用了调试支持，服务器会在代码修改后自动重新载入，并在发生错误时提供一个相当有用的调试器
 app.run(debug=True)
 
+#
+# @app.route("/", methods=['GET', 'POST'])
+# def hello():
+#     return "hello world"
 
-@app.route("/", methods=['GET', 'POST'])
-def hello():
-    return "hello world"
+@app.route('/index/')
+@app.route('/index/<name>')
+def index(name=None):
+    return render_template('index.html', name=name)
 
 
 @app.route('/hello/')
