@@ -59,7 +59,7 @@
     "rollup-plugin-node-resolve": "^4.2.3",
     "run-sequence": "^2.2.0",
     "stylefmt": "^6.0.3",
-    "stylelint": "^9.10.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-sass-guidelines": "^5.4.0",
     "stylelint-order": "^1.0.0",
     "stylelint-scss": "^3.6.0"
